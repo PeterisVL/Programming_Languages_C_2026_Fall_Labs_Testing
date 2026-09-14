@@ -5,7 +5,7 @@ int main(void) {
     double a, b;
     char op;
 
-    printf("Simple Calculator (+ - * /)\\n");
+    printf("Simple Calculator (+ - * /)\n");
     printf("Enter expression (e.g., 3.5 * 2): ");
 
     if (scanf("%lf %c %lf", &a, &op, &b) != 3) {
@@ -15,23 +15,23 @@ int main(void) {
 
     switch (op) {
         case '+':
-            printf("= %.6f\\n", a + b);
+            printf("= %.6f\n", a + b);
             break;
         case '-':
-            printf("= %.6f\\n", a - b);
+            printf("= %.6f\n", a - b);
             break;
         case '*':
-            printf("= %.6f\\n", a * b);
+            printf("= %.6f\n", a * b);
             break;
         case '/':
             if (b == 0.0) {
-                printf("Error: division by zero!\\n");
+                printf("Error: division by zero!\n");
                 return 1;
             }
-            printf("= %.6f\\n", a / b);
+            printf("= %.6f\n", a / b);
             break;
         default:
-            printf("Unknown operator '%c'. Use + - * /.\\n", op);
+            printf("Unknown operator '%c'. Use + - * /.\n", op);
             return 1;
     }
 
