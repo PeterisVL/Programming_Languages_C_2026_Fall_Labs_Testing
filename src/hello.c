@@ -7,6 +7,7 @@ int main(int argc, char* argv[]) {
   printf("Hello from Peteris!\n");
   printf("2 Hello from Peteris!\n");
   printf("3 Hello from Peteris!\n");
+  printf("4 Hello from Peteris!\n");
 
   printf("You passed %d argument(s).\n", argc - 1);
   for (int i = 1; i < argc; ++i) {
