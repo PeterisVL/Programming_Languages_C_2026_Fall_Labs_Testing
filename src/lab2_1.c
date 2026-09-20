@@ -13,7 +13,16 @@
 
 int sum_to_n(int n) {
     // TODO: implement sum with a for loop
-    return 0; // placeholder
+    int sum = 0;
+    int val;
+    
+    for (int i = 1; i <= n; i++)
+    {
+        printf("Enter the %d position number: ", i);
+        scanf("%d", &val);
+        sum = sum + val;
+    }
+    return sum; // placeholder
 }
 
 int main(void) {
@@ -22,6 +31,15 @@ int main(void) {
     printf("Enter a positive integer n: ");
     scanf("%d", &n);
 
+    while (n < 1) {
+        printf("Error: n must be a positive integer.\n Input a positive integer n: ");
+        scanf("%d", &n);
+    }
+    int result = sum_to_n(n);
+
+    printf("The sum result is: ");
+    printf("%d", result);
+    printf("\n");
     // TODO: validate input, call function, and print result
 
     return 0;
