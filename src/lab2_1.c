@@ -17,9 +17,7 @@ int sum_to_n(int n) {
   int val;
 
   for (int i = 1; i <= n; i++) {
-    printf("Enter the %d position number: ", i);
-    scanf("%d", &val);
-    sum = sum + val;
+    sum = sum + i;
   }
   return sum;  // placeholder
 }
